@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+.logo h2 {
+  margin: 0;
+  color: black;
+  font-size: 1.2em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-button,
+.secondary-button,
+.third-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.secondary-button {
+  background-color: #34a957;
+  color: white;
+  font-size: 20px;
+}
+
+.secondary-button:hover {
+  background-color: #0d4d1c;
+  color: white;
+}
+
+.third-button {
+  background-color: #8c68cc;
+  font-size: 20px;
+}
+
+.third-button:hover {
+  background-color: #68347f;
+}
+
+.feature-item h3 {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+.features {
+  padding: 50px 30px;
+  background-color: #ffffff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-item {
+  text-align: center;
+  margin: 30px;
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.feature-link:hover {
+  background-color: #e0e0e0;
+  border-color: #007bff;
+}
+
+.feature-item img {
+  width: 150px;
+  height: auto;
+}
+
+.feature-item h3 {
+  margin: 10px 0;
+}
+
+.feature-item p {
+  color: #2e2727;
+}
+
+.how-it-works {
+  padding: 50px 30px;
+  background-color: #ff5e00;
+  text-align: center;
+  color: #000000;
+}
+
+.how-it-works h2 {
+  margin-bottom: 40px;
+  color: black;
+}
+
+.how-it-works p.intro-text {
+  color: black;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.step h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: black;
+}
+
+.step p {
+  color: #555;
+}
+
+.testimonials {
+  padding: 50px 30px;
+  background-color: #000000;
+}
+
+.testimonials h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.testimonial-item {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.call-to-action {
+  padding: 50px 30px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.call-to-action .join-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.call-to-action .join-button:hover {
+  background-color: #218838;
+}

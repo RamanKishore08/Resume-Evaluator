@@ -1,0 +1,161 @@
+/* General Page Styling */
+.best5-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+/* Center-aligned Header Text */
+.text-align {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-align h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.text-align h2 {
+  font-size: 1.8em;
+  color: #e98330;
+  margin-bottom: 5px;
+}
+
+.text-align p {
+  font-size: 1em;
+  color: #6ac55e;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+/* File Upload Section */
+.file-upload-container {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-upload-container input[type="file"] {
+  padding: 8px;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-upload-text {
+  font-size: 0.9em;
+  color: #15ce68;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.get-resumes-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.get-resumes-button:hover {
+  background-color: #0056b3;
+}
+
+.get-resumes-button:active {
+  transform: scale(0.95);
+}
+
+/* Loading and Error Messages */
+.best5-page p {
+  font-size: 1em;
+  color: #aeddc8;
+  text-align: center;
+}
+
+.best5-page p[style="color: red;"] {
+  color: rgb(255, 255, 255);
+}
+
+/* Best Resumes List */
+.best5-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.best5-page li {
+  background: #000000;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.best5-page li:hover {
+  transform: translateY(-5px);
+  background-color: #000000;
+}
+
+.best5-page li h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.best5-page li p {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+/* Tips and Evaluation Info Sections */
+.tips, .evaluation-info {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #000;
+  color: #ffffff;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.tips:hover{
+  background-color: #aeddc8;
+  color: #000;
+}
+
+.tips h2, .evaluation-info h2 {
+  font-size: 1.4em;
+  color: #f8f4f4;
+  margin-bottom: 10px;
+}
+
+.tips ul, .evaluation-info p {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.tips ul {
+  padding-left: 20px;
+}
+
+.tips ul li {
+  list-style-type: disc;
+}

@@ -1,0 +1,17 @@
+.speedometer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+svg {
+  margin-top: 10px;
+}
+
+.score-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}

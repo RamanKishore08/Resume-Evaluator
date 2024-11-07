@@ -1,0 +1,122 @@
+/* Overall Container */
+.resume-builder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  padding: 80px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Resume Builder */
+.resume-builder {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Resume Form Section */
+.resume-form {
+  width: 48%;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-form input, 
+.resume-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #3f3d3d;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  transition: border 0.2s ease-in-out;
+}
+
+.resume-form input:focus, 
+.resume-form textarea:focus {
+  border-color: #010305;
+  outline: none;
+}
+
+.resume-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.resume-form button {
+  background-color: #42af13;
+  color: #fff;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.resume-form button:hover {
+  background-color: #076408;
+}
+
+.resume-preview {
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 10px;
+  color: #000000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+  overflow: auto;
+}
+
+
+
+.resume-preview h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.resume-preview p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.resume-preview strong {
+  color: #007BFF;
+}
+
+.resume-preview p:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .resume-builder {
+    flex-direction: column;
+  }
+
+  .resume-form, 
+  .resume-preview {
+    width: 100%;
+    color: #000000;
+  }
+}

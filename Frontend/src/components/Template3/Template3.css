@@ -1,0 +1,168 @@
+.resume-builder-container-creative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh; /* Ensures the container takes full height */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.resume-builder {
+  display: flex;
+  flex-direction: column; /* Changed to column */
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+  flex: 1; /* Allows the resume builder to grow and take available space */
+}
+
+.resume-form {
+  width: 100%; /* Full width */
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resume-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-form input,
+.resume-form textarea {
+  margin-bottom: 25px; /* Increased margin for more space between input boxes */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  transition: border 0.2s ease-in-out;
+}
+
+.resume-form input:focus,
+.resume-form textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.resume-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.resume-form button {
+  background-color: #11c61d;
+  color: #fff;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px; /* Added space above the button */
+}
+
+.resume-form button:hover {
+  background-color: #025613;
+}
+
+.resume-preview {
+  width: max-content; /* Full width below the form */
+  height: max-content;
+  background-color: #ffffff;
+  padding: 50px;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-size: 1.5rem;
+  max-height: fit-content; /* Set max height for preview */
+
+}
+
+.resume-preview h2 {
+  font-size: 2.5rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.resume-section {
+  margin-bottom: 20px; /* Adjusted space between sections */
+  border-left: 4px solid #007BFF;
+  padding-left: 10px;
+}
+
+.resume-section h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.resume-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 5px 0; /* Added margin for spacing between lines */
+}
+
+.skills,
+.languages,
+.certifications {
+  margin-bottom: 25px; /* Space between boxes */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+/* New styles for project section */
+.project-section {
+  margin-bottom: 25px; /* Space below the project section */
+}
+
+.project-section h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.project-section input,
+.project-section textarea {
+  width: 100%; /* Full width for inputs */
+}
+
+.project-section textarea {
+  height: 100px; /* Set height for the description box */
+  resize: none; /* Disable resizing */
+}
+
+.project-entry {
+  margin-bottom: 20px; /* Space between project entries */
+}
+
+.project-entry input {
+  margin-bottom: 10px; /* Space below project title */
+}
+
+@media screen and (max-width: 768px) {
+  .resume-builder {
+    flex-direction: column;
+  }
+
+  .resume-form,
+  .resume-preview {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+

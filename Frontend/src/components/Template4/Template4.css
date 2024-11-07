@@ -1,0 +1,154 @@
+.vintage-resume-builder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000; /* Light parchment background */
+  padding: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Classic serif font */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #ffff; /* Dark brown text */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.vintage-resume-builder {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 1100px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.vintage-resume-form {
+  width: 100%;
+  background-color: #000000; /* Slightly off-white background */
+  padding: 30px;
+
+}
+
+.vintage-resume-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vintage-resume-form input,
+.vintage-resume-form textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #c3a48b; /* Light brown border */
+  border-radius: 0; /* Square edges for vintage look */
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: border 0.3s ease;
+}
+
+.vintage-resume-form input:focus,
+.vintage-resume-form textarea:focus {
+  border-color: #5b4636; /* Darker brown on focus */
+  outline: none;
+}
+
+.vintage-resume-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+.vintage-resume-form button {
+  background-color: #1b981b; 
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.vintage-resume-form button:hover {
+  background-color: rgb(0, 45, 0);}
+
+.vintage-resume-preview {
+  
+  background-color: #ffffff;
+  padding: 40px;
+  color: #5b4636;
+  border-radius: 12px;
+  border: 2px solid #d2b48c;
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-height: fit-content;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+.vintage-resume-preview h2 {
+  font-size: 2.5rem;
+  color: #5b4636;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #c3a48b; /* Decorative bottom border */
+  padding-bottom: 10px;
+}
+
+.vintage-resume-section {
+  margin-bottom: 25px;
+  border-left: 4px solid #d2b48c; /* Light brown left border */
+  padding-left: 15px;
+}
+
+.vintage-resume-section h3 {
+  font-size: 1.5rem;
+  color: #5b4636;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.vintage-resume-section p {
+  font-size: 1rem;
+  color: #3e2c21;
+  margin-bottom: 5px;
+}
+
+/* Styles for skills, languages, and certifications */
+.vintage-skills, .vintage-languages, .vintage-certifications {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* Matching the background color */
+  border: 1px solid #c3a48b;
+  border-radius: 8px;
+  color: #36505b;
+}
+
+/* Project section style */
+.vintage-project-section {
+  margin-bottom: 25px;
+}
+
+.vintage-project-section input, .vintage-project-section textarea {
+  width: 100%;
+}
+
+.vintage-project-section textarea {
+  height: 90px;
+}
+
+/* Small screen adjustments */
+@media screen and (max-width: 768px) {
+  .vintage-resume-builder {
+    flex-direction: column;
+  }
+
+  .vintage-resume-form, .vintage-resume-preview {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
