@@ -1,4 +1,4 @@
-README.md
+Here is the README.md with separate terminal commands for each new terminal in Markdown format. Each CLI command is assigned to its own terminal to help users clearly understand how to execute the steps in multiple terminal windows.
 
 # 📄 Resume Evaluation System  
 
@@ -19,44 +19,65 @@ An AI-powered **Resume Evaluation System** built with **React**, **Natural Langu
 ## 📥 Installation & Setup  
 
 ### 🔹 **Step 1: Clone the Repository**  
-#### Open a **new terminal (CLI)** and run:  
-```sh
+#### **Open a New Terminal Window** and run:
+```bash
 git clone https://github.com/your-repo/resume-evaluation.git
 
 
 ---
 
-🔹 Frontend Setup (React)
+🔹 Step 2: Frontend Setup (React)
 
-Open a new terminal and run:
+Open Another New Terminal Window and navigate to the frontend directory:
 
 cd resume-evaluation/frontend
+
+Install Dependencies:
+
+Open a New Terminal Window and run:
+
 npm install
+
+Start the React Application:
+
+Open Another New Terminal Window and run:
+
 npm start
 
 
 ---
 
-🔹 Backend Setup (Python & NLP)
+🔹 Step 3: Backend Setup (Python & NLP)
 
-Open another new terminal and run:
+Open Yet Another New Terminal Window and navigate to the backend directory:
 
 cd resume-evaluation/backend
+
+Create a Virtual Environment:
+
+Open a New Terminal Window and run:
+
 python -m venv venv
 
 Activate Virtual Environment:
 
-# Windows
+In the Same Terminal where the virtual environment was created, run:
+
+# For Windows
 venv\Scripts\activate
 
-# Mac/Linux
+# For Mac/Linux
 source venv/bin/activate
 
 Install Dependencies:
 
+In the Same Terminal where the virtual environment is activated, run:
+
 pip install -r requirements.txt
 
 Run the Flask Server:
+
+In the Same Terminal where the environment is set up, run:
 
 python app.py
 
@@ -65,7 +86,7 @@ python app.py
 
 🎯 Usage
 
-1. Open the React frontend in your browser.
+1. Open the React frontend in your browser (should be running in one terminal).
 
 
 2. Upload your resume (PDF format).
@@ -87,7 +108,5 @@ Feel free to fork this repository and contribute!
 
 📜 License
 
-This project is licensed under the MIT License.
-
-This README ensures **each CLI command is executed in a separate terminal** for better clarity.
+This project is licensed under the **
 
