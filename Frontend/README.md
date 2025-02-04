@@ -16,73 +16,7 @@ An AI-powered **Resume Evaluation System** built with **React**, **Natural Langu
 
 ---
 
-## 📥 Installation & Setup  
 
-### 🔹 **Step 1: Clone the Repository**  
-#### **Open a New Terminal Window** and run:
-```bash
-git clone https://github.com/your-repo/resume-evaluation.git
-
-
----
-
-🔹 Step 2: Frontend Setup (React)
-
-Open Another New Terminal Window and navigate to the frontend directory:
-
-cd resume-evaluation/frontend
-
-Install Dependencies:
-
-Open a New Terminal Window and run:
-
-npm install
-
-Start the React Application:
-
-Open Another New Terminal Window and run:
-
-npm start
-
-
----
-
-🔹 Step 3: Backend Setup (Python & NLP)
-
-Open Yet Another New Terminal Window and navigate to the backend directory:
-
-cd resume-evaluation/backend
-
-Create a Virtual Environment:
-
-Open a New Terminal Window and run:
-
-python -m venv venv
-
-Activate Virtual Environment:
-
-In the Same Terminal where the virtual environment was created, run:
-
-# For Windows
-venv\Scripts\activate
-
-# For Mac/Linux
-source venv/bin/activate
-
-Install Dependencies:
-
-In the Same Terminal where the virtual environment is activated, run:
-
-pip install -r requirements.txt
-
-Run the Flask Server:
-
-In the Same Terminal where the environment is set up, run:
-
-python app.py
-
-
----
 
 🎯 Usage
 
@@ -106,7 +40,15 @@ python app.py
 
 Feel free to fork this repository and contribute!
 
-📜 License
+### Explanation of Terminal Setup:
+- **Terminal 1**: Handles cloning the repository.
+- **Terminal 2**: Handles navigation to the frontend.
+- **Terminal 3**: Handles installation of frontend dependencies.
+- **Terminal 4**: Runs the frontend React app.
+- **Terminal 5**: Handles navigation to the backend.
+- **Terminal 6**: Creates a Python virtual environment.
+- **Terminal 7**: Activates the virtual environment (Windows/Mac/Linux).
+- **Terminal 8**: Installs backend dependencies.
+- **Terminal 9**: Starts the Flask server.
 
-This project is licensed under the **
-
+This layout will help users easily follow the steps in different terminals for a clear and organized setup process.
