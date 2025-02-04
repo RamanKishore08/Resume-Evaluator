@@ -18,18 +18,20 @@ An AI-powered **Resume Evaluation System** built with **React**, **Natural Langu
 
 ## 📥 Installation & Setup  
 
-### 🔹 **Frontend Setup (React)**  
+### 🔹 **Step 1: Clone the Repository**  
+#### Open a **new terminal (CLI)** and run:  
 ```sh
-# Step 1: Clone the repository  
-git clone https://github.com/your-repo/resume-evaluation.git  
+git clone https://github.com/your-repo/resume-evaluation.git
 
-# Step 2: Navigate to the frontend directory  
-cd resume-evaluation/frontend  
 
-# Step 3: Install dependencies  
-npm install  
+---
 
-# Step 4: Start the React application  
+🔹 Frontend Setup (React)
+
+Open a new terminal and run:
+
+cd resume-evaluation/frontend
+npm install
 npm start
 
 
@@ -37,18 +39,25 @@ npm start
 
 🔹 Backend Setup (Python & NLP)
 
-# Step 1: Navigate to the backend directory  
-cd ../backend  
+Open another new terminal and run:
 
-# Step 2: Create a virtual environment (Optional but recommended)  
-python -m venv venv  
-source venv/bin/activate  # For Mac/Linux  
-venv\Scripts\activate  # For Windows  
+cd resume-evaluation/backend
+python -m venv venv
 
-# Step 3: Install dependencies  
-pip install -r requirements.txt  
+Activate Virtual Environment:
 
-# Step 4: Run the Flask server  
+# Windows
+venv\Scripts\activate
+
+# Mac/Linux
+source venv/bin/activate
+
+Install Dependencies:
+
+pip install -r requirements.txt
+
+Run the Flask Server:
+
 python app.py
 
 
@@ -56,13 +65,16 @@ python app.py
 
 🎯 Usage
 
-1. Upload your resume (PDF format).
+1. Open the React frontend in your browser.
 
 
-2. The system analyzes it using NLP techniques.
+2. Upload your resume (PDF format).
 
 
-3. Get ATS Score, Feedback, and Suggestions for improvement.
+3. The system will analyze it using NLP techniques.
+
+
+4. Get ATS Score, Feedback, and Suggestions for improvement.
 
 
 
@@ -77,5 +89,5 @@ Feel free to fork this repository and contribute!
 
 This project is licensed under the MIT License.
 
-This README is **well-structured**, **attractive**, and **easy to follow** for developers.
+This README ensures **each CLI command is executed in a separate terminal** for better clarity.
 
